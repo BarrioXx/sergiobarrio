@@ -8,12 +8,12 @@ document.addEventListener("DOMContentLoaded", function() {
             e.preventDefault(); // Evita que la página recargue
 
             // Ocultamos todas las secciones
-            document.querySelectorAll('.seccion').forEach(section => {
+            document.querySelectorAll('seccion').forEach(section => {
                 section.classList.remove('visible');
             });
 
             // Mostramos la sección correspondiente al enlace clicado
-            const sectionToShow = this.getAttribute('.seccion');
+            const sectionToShow = this.getAttribute('seccion');
             document.getElementById(sectionToShow).classList.add('visible');
         });
     });
