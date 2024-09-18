@@ -3,6 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    padding-top: 60px;
 }
 
 /* Menú de navegación fijo */
@@ -64,9 +65,4 @@ nav ul li a:hover {
 
 #contacto {
     background-color: #e8f7ff;
-}
-
-/* Asegurar que el contenido no se superponga al menú fijo */
-body {
-    padding-top: 60px;
 }
