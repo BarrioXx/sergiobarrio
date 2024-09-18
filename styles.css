@@ -1,69 +1,127 @@
-/* Estilos generales */
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-/* Menú de navegación fijo */
-#navbar {
+h1, h2 {
+    color: #222;
+}
+
+/* Navbar */
+nav {
     background-color: #333;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
     padding: 10px 0;
+    text-align: center;
 }
 
-#navbar ul {
-    list-style: none;
+nav ul {
+    list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
 }
 
-#navbar ul li {
+nav ul li {
+    display: inline;
     margin: 0 15px;
 }
 
-#navbar ul li a {
+nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 10px 20px;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #f4f4f4;
+}
+
+/* Sections */
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+#home {
+    background: url('background-image.jpg') no-repeat center center/cover;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#about, #portfolio, #resume, #contact {
+    background-color: #f9f9f9;
+    margin: 20px 0;
+}
+
+/* Portfolio */
+.projects {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 45%;
+    margin: 10px;
+    text-align: left;
+}
+
+.project h3 {
+    margin-top: 0;
+}
+
+.project a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+/* Contact Form */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+form label {
     display: block;
-    transition: background-color 0.3s;
+    margin: 10px 0 5px;
 }
 
-#navbar ul li a:hover {
-    background-color: #575757;
-    border-radius: 5px;
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
 }
 
-/* Estilos para las secciones */
-.seccion {
-    display: none; /* Todas las secciones están ocultas por defecto */
-    padding: 100px 20px;
-    min-height: 100vh;
+form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
 }
 
-.visible {
-    display: block; /* Solo la sección visible se muestra */
+form button:hover {
+    background-color: #555;
 }
 
-#inicio {
-    background-color: #f4f4f4;
-}
-
-#portafolio {
-    background-color: #f0f0ff;
-}
-
-#contacto {
-    background-color: #e8f7ff;
-}
-
-/* Asegurar que el contenido no se superponga al menú fijo */
-body {
-    padding-top: 60px;
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
 }
