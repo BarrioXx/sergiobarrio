@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
             });
 
             // Mostramos la sección correspondiente al enlace clicado
-            const sectionToShow = this.getAttribute('seccion');
+            const sectionToShow = this.getAttribute('.seccion');
             document.getElementById(sectionToShow).classList.add('visible');
         });
     });
