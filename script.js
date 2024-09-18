@@ -1,16 +1,20 @@
-// Contact Form Submission
-document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault();
+document.addEventListener("DOMContentLoaded", function() {
+    // Seleccionamos todos los enlaces del menú
+    const menuItems = document.querySelectorAll('nav ul li a');
+    
+    // Añadimos un evento click a cada enlace
+    menuItems.forEach(item => {
+        item.addEventListener('click', function(e) {
+            e.preventDefault(); // Evita que la página recargue
 
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
+            // Ocultamos todas las secciones
+            document.querySelectorAll('.seccion').forEach(section => {
+                section.classList.remove('visible');
+            });
 
-    // Simple validation
-    if (name && email && message) {
-        alert('Gracias por tu mensaje, ' + name + '. Me pondré en contacto pronto.');
-        document.getElementById('contactForm').reset();
-    } else {
-        alert('Por favor, completa todos los campos.');
-    }
+            // Mostramos la sección correspondiente al enlace clicado
+            const sectionToShow = this.getAttribute('data-section');
+            document.getElementById(sectionToShow).classList.add('visible');
+        });
+    });
 });

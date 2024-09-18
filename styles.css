@@ -1,130 +1,72 @@
-/* General Styles */
+/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
 }
 
-h1, h2 {
-    color: #222;
-}
-
-/* Navbar */
+/* Menú de navegación fijo */
 nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
     background-color: #333;
-    padding: 10px 0;
-    text-align: center;
+    z-index: 1000;
 }
 
 nav ul {
-    list-style-type: none;
+    list-style: none;
+    display: flex;
+    justify-content: center;
     margin: 0;
     padding: 0;
 }
 
 nav ul li {
-    display: inline;
     margin: 0 15px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    padding: 10px 20px;
+    display: block;
+    transition: background-color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #f4f4f4;
+    background-color: #575757;
+    border-radius: 5px;
 }
 
-/* Sections */
-section {
-    padding: 50px;
-    text-align: center;
+/* Estilos para las secciones */
+.seccion {
+    display: none; /* Todas las secciones están ocultas por defecto */
+    padding: 100px 20px;
+    min-height: 100vh;
 }
 
-#home {
-    background: url('background-image.jpg') no-repeat center center/cover;
-    color: white;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.visible {
+    display: block; /* Solo la sección visible se muestra */
 }
 
-#about, #portfolio, #resume, #contact {
-    background-color: #f9f9f9;
-    margin: 20px 0;
+#inicio {
+    background-color: #f4f4f4;
 }
 
-/* Portfolio */
-.projects {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+#portafolio {
+    background-color: #f0f0ff;
 }
 
-.project {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    padding: 20px;
-    width: 45%;
-    margin: 10px;
-    text-align: left;
+#sobre-mi {
+    background-color: #fff4e6;
 }
 
-.project h3 {
-    margin-top: 0;
+#contacto {
+    background-color: #e8f7ff;
 }
 
-.project a {
-    color: #3498db;
-    text-decoration: none;
-}
-
-/* Contact Form */
-form {
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: left;
-}
-
-form label {
-    display: block;
-    margin: 10px 0 5px;
-}
-
-form input, form textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0;
-    border: 1px solid #ddd;
-}
-
-form button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background-color: #333;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-form button:hover {
-    background-color: #555;
-}
-
-/* Footer */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 20px;
-}
+/* Asegurar que el contenido no se superponga al menú fijo */
 body {
     padding-top: 60px;
 }
