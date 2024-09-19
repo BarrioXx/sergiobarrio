@@ -17,10 +17,10 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById(sectionToShow).classList.add('visible');
         });
     });
-
-    $('.carousel').carousel({
-        interval: 2000
-      })
 });
+
+$('.carousel').carousel({
+    interval: 2000
+  })
 
 
