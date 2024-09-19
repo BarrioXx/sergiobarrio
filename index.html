@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <title>Mi Página Web</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -24,48 +27,49 @@
     </section>
 
     <section id="portafolio" class="seccion">
-        <h1>Mi Portafolio</h1>
-    
-        <!-- Carrusel de Proyectos Web -->
-        <div class="carrusel">
-            <h2>Proyectos Web</h2>
-            <div class="carrusel-contenedor" id="web-carousel">
-                <div class="item">
-                    <img src="images/Captura de pantalla (1).png" alt="Proyecto Web 1">
-                    <p>Proyecto Web 1</p>
-                </div>
-                <div class="item">
-                    <img src="images/Captura de pantalla (2).png" alt="Proyecto Web 2">
-                    <p>Proyecto Web 2</p>
-                </div>
-                <!-- Añade más proyectos web aquí -->
-            </div>
-            <button class="prev" onclick="moverCarrusel('web-carousel', -1)">&#10094;</button>
-            <button class="next" onclick="moverCarrusel('web-carousel', 1)">&#10095;</button>
-        </div>
-    
-        <!-- Carrusel de Proyectos de Aplicaciones -->
-        <div class="carrusel">
-            <h2>Proyectos de Aplicacion</h2>
-            <div class="carrusel-contenedor" id="app-carousel">
-                <div class="item">
-                    <img src="images/Captura de pantalla (1).png" alt="Proyecto App 1">
-                    <p>Proyecto App 1</p>
-                </div>
-                <div class="item">
-                    <img src="images/Captura de pantalla (2).png" alt="Proyecto App 2">
-                    <p>Proyecto App 2</p>
-                </div>
-                <!-- Añade más proyectos de aplicaciones aquí -->
-            </div>
-            <button class="prev" onclick="moverCarrusel('app-carousel', -1)">&#10094;</button>
-            <button class="next" onclick="moverCarrusel('app-carousel', 1)">&#10095;</button>
-        </div>
-    </section>
+        <body>
 
-    <section id="sobre-mi" class="seccion">
-        <h2>Sobre mí</h2>
-        <p>Con más de [X] años de experiencia, me especializo en automatización de procesos y gestión de identidades. Ayudo a empresas a ganar tiempo y optimizar sus operaciones.</p>
+            <div class="container">
+              <br>
+              <div id="theCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicadores -->
+                <ol class="carousel-indicators">
+                  <li data-target="#theCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#theCarousel" data-slide-to="1"></li>
+                  
+                </ol>
+            
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                    <img src="images/images/Captura de pantalla (2).png" alt="Ilustracion" > 
+                     <div class="carousel-caption d-none d-md-block">
+                <h3>Gusti Ilustración</h3>
+                <p>Exposición</p>
+              </div>
+                  </div>
+            
+                 
+                
+                  <div class="item">
+                    <img src="images/images/Captura de pantalla (2).png" alt="fotografia" width="600" height="424"> 
+                     <div class="carousel-caption d-none d-md-block">
+                <h3> Xataka Fotografía</h3>
+                <p>Concurso</p>
+              </div>
+                  
+                  </div>
+            
+            
+                <a class="left carousel-control" href="#theCarousel" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                  <span class="sr-only">anterior</span>
+                </a>
+                <a class="right carousel-control" href="#theCarousel" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                  <span class="sr-only">siguiente</span>
+                </a>
+              </div>
+            </div>
     </section>
 
     <section id="contacto" class="seccion">
