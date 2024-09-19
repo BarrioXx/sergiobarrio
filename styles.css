@@ -145,7 +145,7 @@ footer {
 }
 
 .carousel-inner > .item > img,
-  .carousel-inner > .carousel-item {
+  .carousel-inner > .item > a > img {
       width: 60%;
       margin: auto;
   }
