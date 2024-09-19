@@ -61,10 +61,12 @@ nav ul li a:hover {
 
 #inicio {
     background-color: #121212;
+    color: #FFFFFF;
 }
 
 #portafolio {
-    background-color: #f0f0ff;
+    background-color: #121212;
+    color: #FFFFFF;
 }
 
 #sobre-mi {
