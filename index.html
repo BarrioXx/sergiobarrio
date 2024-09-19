@@ -18,24 +18,48 @@
     </nav>
 
     <!-- Secciones -->
-    <section id="inicio" class="seccion">
+    <section id="inicio" class="seccion visible">
         <h1>Bienvenido, soy [Tu Nombre]</h1>
         <p>Programador especializado en gestión de identidades y automatización.</p>
     </section>
 
     <section id="portafolio" class="seccion">
-        <h2>Portafolio</h2>
-        <div class="projects">
-            <div class="project">
-                <h3>Proyecto 1</h3>
-                <p>Descripción breve del proyecto.</p>
-                <a href="#">Ver más</a>
+        <h1>Mi Portafolio</h1>
+    
+        <!-- Carrusel de Proyectos Web -->
+        <div class="carrusel">
+            <h2>Proyectos Web</h2>
+            <div class="carrusel-contenedor" id="web-carousel">
+                <div class="item">
+                    <img src="web-proyecto1.jpg" alt="Proyecto Web 1">
+                    <p>Proyecto Web 1</p>
+                </div>
+                <div class="item">
+                    <img src="web-proyecto2.jpg" alt="Proyecto Web 2">
+                    <p>Proyecto Web 2</p>
+                </div>
+                <!-- Añade más proyectos web aquí -->
             </div>
-            <div class="project">
-                <h3>Proyecto 2</h3>
-                <p>Descripción breve del proyecto.</p>
-                <a href="#">Ver más</a>
+            <button class="prev" onclick="moverCarrusel('web-carousel', -1)">&#10094;</button>
+            <button class="next" onclick="moverCarrusel('web-carousel', 1)">&#10095;</button>
+        </div>
+    
+        <!-- Carrusel de Proyectos de Aplicaciones -->
+        <div class="carrusel">
+            <h2>Proyectos de Aplicaciones</h2>
+            <div class="carrusel-contenedor" id="app-carousel">
+                <div class="item">
+                    <img src="app-proyecto1.jpg" alt="Proyecto App 1">
+                    <p>Proyecto App 1</p>
+                </div>
+                <div class="item">
+                    <img src="app-proyecto2.jpg" alt="Proyecto App 2">
+                    <p>Proyecto App 2</p>
+                </div>
+                <!-- Añade más proyectos de aplicaciones aquí -->
             </div>
+            <button class="prev" onclick="moverCarrusel('app-carousel', -1)">&#10094;</button>
+            <button class="next" onclick="moverCarrusel('app-carousel', 1)">&#10095;</button>
         </div>
     </section>
 
