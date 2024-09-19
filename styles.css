@@ -60,7 +60,7 @@ nav ul li a:hover {
 }
 
 #inicio {
-    background-color: #f4f4f4;
+    background-color: #121212;
 }
 
 #portafolio {
@@ -140,4 +140,53 @@ footer {
     text-align: center;
     padding: 20px;
     margin-top: 20px;
+}
+
+.carrusel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.carrusel-contenedor {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 300%; /* Aumentar este valor según el número de elementos */
+}
+
+.carrusel .item {
+    min-width: 100%; /* El ancho de cada ítem es el 100% del contenedor */
+    box-sizing: border-box;
+}
+
+.carrusel .item img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
