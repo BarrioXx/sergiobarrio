@@ -19,21 +19,23 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-const elementoClick = document.querySelector('#portafolio');
-elementoClick.addEventListener('click', function() {
+const menuItems = document.querySelectorAll('#portafolio');
+
+menuItems.forEach(item => {
+item.addEventListener('click', function() {
     new Swiper('.card-wrapper', {
         loop: true,
         spaceBetween: 10,
-      
+        
         // If we need pagination
         pagination: {
-          el: '.swiper-pagination',
+            el: '.swiper-pagination',
         },
-      
+        
         // Navigation arrows
         navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
         },
     
         breakpoints: {
@@ -48,8 +50,12 @@ elementoClick.addEventListener('click', function() {
             },
         }
     
-      });
+    });
+
 });
+});
+
+
 
 
 
