@@ -51,8 +51,7 @@ nav ul li a:hover {
 
 /* Estilos para las secciones */
 .seccion {
-    display: none; /* Todas las secciones están ocultas por defecto */
-    padding: 100px 20px;
+    display: flex; /* Todas las secciones están ocultas por defecto */
     min-height: 100vh;
     background-color: #31363F;
 }
