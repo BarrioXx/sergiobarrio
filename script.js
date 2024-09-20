@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 new Swiper('.card-wrapper', {
     loop: true,
-    spaceBetween: 30,
+    spaceBetween: 10,
   
     // If we need pagination
     pagination: {
