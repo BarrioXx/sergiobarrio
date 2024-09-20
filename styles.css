@@ -133,13 +133,13 @@ footer {
 }
 
 .card-list .card-item .card-link {
-    width: 400px;
+    user-select: none;
     display: block;
     background: #EEEEEE;
     padding: 18px;
-    border-radius: 12px;
+    border-radius: 30px;
     text-decoration: none;
-    border: 20px solid transparent;
+    border: 2px solid transparent;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
     transition: 0.2s ease;
 }
@@ -182,4 +182,10 @@ footer {
     cursor: pointer;
     border: 2px solid #76ABAE;
     transform: rotate(-45deg);
+    transition: 0.4s ease;
+}
+
+.card-list .card-link:hover .card-button {
+    color: #31363F;
+    background: #76ABAE;
 }
