@@ -1,5 +1,3 @@
-import { swiper } from './scriptSwiper.js';
-
 document.addEventListener("DOMContentLoaded", function() {
     // Seleccionamos todos los enlaces del menú
     const menuItems = document.querySelectorAll('nav ul li a');
@@ -17,10 +15,6 @@ document.addEventListener("DOMContentLoaded", function() {
             // Mostramos la sección correspondiente al enlace clicado
             const sectionToShow = this.getAttribute('data-section');
             document.getElementById(sectionToShow).classList.add('visible');
-
-            if (sectionToShow = 'portafolio') {
-                swiper();
-            }
         });
     });
 });
