@@ -1,4 +1,4 @@
-const swiper = new Swiper('.card-wrapper', {
+new Swiper('.card-wrapper', {
     loop: true,
     spaceBetween: 30,
     
