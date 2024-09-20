@@ -1,3 +1,8 @@
+import Swiper from 'swiper';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
 document.addEventListener("DOMContentLoaded", function() {
     // Seleccionamos todos los enlaces del menú
     const menuItems = document.querySelectorAll('nav ul li a');
