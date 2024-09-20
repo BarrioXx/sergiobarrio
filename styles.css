@@ -53,6 +53,7 @@ nav ul li a:hover {
     display: none; /* Todas las secciones están ocultas por defecto */
     padding: 100px 20px;
     min-height: 100vh;
+    background-color: #31363F;
 }
 
 .visible {
