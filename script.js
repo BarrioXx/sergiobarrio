@@ -17,7 +17,10 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById(sectionToShow).classList.add('visible');
         });
     });
+});
 
+const elementoClick = document.querySelector('#portafolio');
+elementoClick.addEventListener('click', function() {
     new Swiper('.card-wrapper', {
         loop: true,
         spaceBetween: 10,
