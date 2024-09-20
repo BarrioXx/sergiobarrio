@@ -131,7 +131,7 @@ footer {
 
 .card-wrapper {
     margin: 0 auto;
-    min-height: 100vh;
+    min-width: 100vh;
 }
 
 .card-list .card-item{
