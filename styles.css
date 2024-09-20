@@ -51,6 +51,7 @@ nav ul li a:hover {
 /* Estilos para las secciones */
 .seccion {
     display: none; /* Todas las secciones están ocultas por defecto */
+    padding: 100px 20px;
     min-height: 100vh;
     background-color: #31363F;
 }
@@ -68,7 +69,6 @@ nav ul li a:hover {
 #portafolio {
     background-color: #31363F;
     color: #EEEEEE;
-    display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
@@ -98,7 +98,7 @@ form label {
 }
 
 form input, form textarea {
-    width: 90%;
+    width: 100%;
     padding: 10px;
     margin: 5px 0;
     border: 1px solid #ddd;
@@ -148,7 +148,7 @@ footer {
 }
 
 .card-list .card-link .card-image {
-    width: 100%;
+    width: 50%;
     aspect-ratio: 16 / 9;
     object-fit: cover;
     border-radius: 10px;
