@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     padding-top: 0px;
+    box-sizing: border-box;
 }
 
 h1 {
@@ -129,9 +130,8 @@ footer {
 }
 
 .card-wrapper {
-    margin: 0;
-    padding: 0;
-    width: auto;
+    margin: 0 auto;
+    min-height: 100vh;
 }
 
 .card-list .card-item{
