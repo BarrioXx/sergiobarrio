@@ -132,7 +132,7 @@ footer {
 }
 
 .card-list .card-item .card-link {
-    user-select: none;
+    width: 200px;
     display: block;
     background: #EEEEEE;
     padding: 18px;
@@ -148,7 +148,7 @@ footer {
 }
 
 .card-list .card-link .card-image {
-    width: 50%;
+    width: 100%;
     aspect-ratio: 16 / 9;
     object-fit: cover;
     border-radius: 10px;
