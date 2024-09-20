@@ -133,6 +133,7 @@ footer {
 
 .card-list .card-item .card-link {
     width: 300px;
+    margin: 20px;
     display: block;
     background: #EEEEEE;
     padding: 18px;
