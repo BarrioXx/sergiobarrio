@@ -127,6 +127,11 @@ footer {
     margin-top: 20px;
 }
 
+.card-wrapper {
+    margin: 0;
+    padding: 0;
+}
+
 .card-list .card-item{
     list-style: none;
 }
