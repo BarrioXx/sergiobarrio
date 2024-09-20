@@ -1,6 +1,6 @@
 new Swiper('.card-wrapper', {
     loop: true,
-    spaceBetween: 10,
+    spaceBetween: 0,
     
     // If we need pagination
     pagination: {
@@ -21,7 +21,7 @@ new Swiper('.card-wrapper', {
             slidesPerView: 2
         },
         1024: {
-            slidesPerView: 3
+            slidesPerView: 5
         },
     }
 });
