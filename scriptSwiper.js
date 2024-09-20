@@ -1,4 +1,4 @@
-new Swiper('.swiper-container', {
+new Swiper('.card-wrapper', {
     loop: true,
     
     // If we need pagination
