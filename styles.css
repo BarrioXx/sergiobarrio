@@ -65,8 +65,15 @@ nav ul li a:hover {
 }
 
 #portafolio {
-    background-color: #121212;
-    color: #FFFFFF;
+    background-color: #31363F;
+    color: #EEEEEE;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
 
 #sobre-mi {
@@ -77,30 +84,7 @@ nav ul li a:hover {
     background-color: #e8f7ff;
 }
 
-/* Portfolio */
-.projects {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
 
-.project {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    padding: 20px;
-    width: 45%;
-    margin: 10px;
-    text-align: left;
-}
-
-.project h3 {
-    margin-top: 0;
-}
-
-.project a {
-    color: #3498db;
-    text-decoration: none;
-}
 
 /* Contact Form */
 form {
@@ -137,15 +121,65 @@ form button:hover {
 
 /* Footer */
 footer {
-    background-color: #333;
+    background-color: #31363F;
     color: white;
     text-align: center;
     padding: 20px;
     margin-top: 20px;
 }
 
-.carousel-inner > .item > img,
-  .carousel-inner > .item > a > img {
-      width: 60%;
-      margin: auto;
-  }
+.card-list .card-item{
+    list-style: none;
+}
+
+.card-list .card-item .card-link {
+    width: 400px;
+    display: block;
+    background: #EEEEEE;
+    padding: 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+    transition: 0.2s ease;
+}
+
+.card-list .card-item .card-link:hover {
+    border-color: #76ABAE; 
+}
+
+.card-list .card-link .card-image {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card-list .card-link .badge {
+    color: #76ABAE; 
+    padding: 8px 16px;
+    font-size: 0.95rem;
+    margin: 16px 0 18 px;
+    font-weight: 500;
+    background: #31363F;
+    width: fit-content;
+    border-radius: 50px;
+}
+
+.card-list .card-link .card-title {
+    font-size: 1.19rem;
+    color: #76ABAE;
+    font-weight: 600;
+}
+
+.card-list .card-link .card-button {
+    height: 35px;
+    width: 35px;
+    color: #31363F;
+    border-radius: 50%;
+    margin: 30px 0 5px;
+    background: none;
+    cursor: pointer;
+    border: 2px solid #76ABAE;
+    transform: rotate(-45deg);
+}
