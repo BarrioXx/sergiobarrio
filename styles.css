@@ -141,7 +141,9 @@ footer {
 }
 
 .card-wrapper {
-    width: 70%;
+    width: 80%;
+    margin: 0 auto;
+    padding: 5px;
     min-width: 100vh;
 }
 
@@ -206,4 +208,8 @@ footer {
 .card-list .card-link:hover .card-button {
     color: #31363F;
     background: #76ABAE;
+}
+
+.swiper-button-next {
+    margin-left: 5px;
 }
