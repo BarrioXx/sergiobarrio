@@ -52,21 +52,17 @@ nav ul li a:hover {
 
 /* Estilos para las secciones */
 .seccion {
-    display: none; /* Todas las secciones están ocultas por defecto */
+    display: block;
     padding: 100px 20px;
     min-height: 100vh;
     min-width: 100vh;
     background-color: #31363F;
 }
 
-.visible {
-    display: block; /* Solo la sección visible se muestra */
-}
-
 #inicio {
     background-color: #31363F;
     color: #EEEEEE;
-    height: 90%;
+    height: 85%;
 }
 
 
@@ -138,6 +134,7 @@ footer {
 
 .swiper {
     width: 80%;
+    padding-top: 10px;
 }
 
 .card-wrapper {
