@@ -141,7 +141,8 @@ footer {
 }
 
 .card-wrapper {
-    margin: 10;
+    margin: 0 auto;
+    padding: 5px;
     min-width: 100vh;
 }
 
