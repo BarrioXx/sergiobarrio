@@ -3,9 +3,9 @@ new Swiper('.card-wrapper', {
     spaceBetween: 5,
     
     // If we need pagination
-    pagination: {
+    /*pagination: {
         el: '.swiper-pagination',
-    },
+    },*/
     
     // Navigation arrows
     navigation: {
