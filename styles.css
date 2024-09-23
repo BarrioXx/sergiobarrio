@@ -29,7 +29,7 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    margin-top: 25px;
+    margin-top: 25;
     padding: 0;
 }
 
@@ -85,7 +85,7 @@ nav ul li a:hover {
 }
 
 #contacto {
-    background-color: #e8f7ff;
+    background-color: #31363F;
 }
 
 
@@ -141,6 +141,7 @@ footer {
 }
 
 .card-wrapper {
+    width: 70%;
     margin: 0 auto;
     padding: 5px;
     min-width: 100vh;
