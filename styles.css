@@ -131,6 +131,12 @@ footer {
     margin-top: 20px;
 }
 
+/* SWIPER */
+
+.swiper {
+    width: 100%;
+}
+
 .card-wrapper {
     margin: 0 auto;
     min-width: 100vh;
