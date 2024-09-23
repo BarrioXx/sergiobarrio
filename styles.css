@@ -63,12 +63,13 @@ nav ul li a:hover {
 }
 
 #inicio {
-    background-color: #121212;
-    color: #FFFFFF;
+    background-color: #31363F;
+    color: #EEEEEE;
+    height: 100%;
 }
 
 
-#portafolio {
+#proyectos {
     background-color: #31363F;
     color: #EEEEEE;
     align-items: center;
