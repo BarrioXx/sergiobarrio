@@ -143,7 +143,6 @@ footer {
 .card-wrapper {
     width: 80%;
     margin: 0 auto;
-    padding: 5px;
     min-width: 100vh;
 }
 
@@ -153,7 +152,7 @@ footer {
 
 .card-list .card-item .card-link {
     width: 300px;
-    margin-left: 5px;
+    margin: 5px;
     display: block;
     background: #EEEEEE;
     padding: 18px;
