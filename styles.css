@@ -20,7 +20,7 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #333;
+    background-color: #31363F;
     z-index: 1000;
     height: 5%;
 }
@@ -38,16 +38,19 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #EEEEEE;
     text-decoration: none;
+    background-color: #333;
     padding: 10px 20px;
     display: block;
     transition: background-color 0.3s;
+    border-radius: 5px;
 }
 
 nav ul li a:hover {
-    background-color: #575757;
+    background-color: #76ABAE;
     border-radius: 5px;
+    color: #31363F;
 }
 
 /* Estilos para las secciones */
