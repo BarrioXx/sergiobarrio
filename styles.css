@@ -13,6 +13,7 @@ h1 {
 
 h2 {
     text-align: center;
+    color: #EEEEEE;
 }
 
 /* Menú de navegación fijo */
@@ -20,7 +21,7 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #31363F;
+    background-color: transparent;
     z-index: 1000;
     height: 10%;
 }
@@ -212,4 +213,5 @@ footer {
 
 .swiper-button-next {
     margin-left: 5px;
+    color: #EEEEEE;
 }
